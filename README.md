@@ -4,7 +4,7 @@
 
 **Can a cheap decision model decide which HTTP responses deserve an expensive reasoning model, sparing that model most of its work, without throwing away the anomalies that matter?**
 
-This repository is the complete, reproducible pilot behind the article [System One AI for Cybersecurity: A Decision Layer Between Rules and Reasoning](https://niklas-heringer.com/research/system-one-ai-cybersecurity/). It tests four decision models (Laya, GLiNER2.5-Decide, Jev 1.13.0 and OpenAI's Decisions API) and three generative LLM settings as a triage gate for a security research pipeline, on synthetic HTTP data.
+This repository is the complete, reproducible pilot behind the article [System One AI for Cybersecurity: Not Every Decision Needs a Generative Model](https://niklas-heringer.com/research/system-one-ai-cybersecurity/). It tests four decision models (Laya, GLiNER2.5-Decide, Jev 1.13.0 and OpenAI's Decisions API) and three generative LLM settings as a triage gate for a security research pipeline, on synthetic HTTP data.
 
 Every model output is committed. You can recompute every number in the article with one command, without API keys and without network access.
 
@@ -203,10 +203,10 @@ GitHub shows a "Cite this repository" button generated from `CITATION.cff`. In p
 
 ```text
 Niklas Heringer (2026). System One Harness: a pilot on decision models as a triage gate
-for security research. Version 1.0.0. https://github.com/mev0lent/system-one-harness
+for security research. Version 1.0.1. https://github.com/mev0lent/system-one-harness
 ```
 
-The article cites version `v1.0.0`. Later changes are listed in the GitHub releases.
+The article was published alongside version `v1.0.1`. Later changes are listed in the GitHub releases.
 
 ## License
 
