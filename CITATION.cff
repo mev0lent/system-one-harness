@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this harness or its results, please cite it as below."
+title: "System One Harness: a pilot on decision models as a triage gate for security research"
+type: software
+authors:
+  - family-names: Heringer
+    given-names: Niklas
+version: 1.0.0
+date-released: 2026-10-11
+license: MIT
+repository-code: "https://github.com/mev0lent/system-one-harness"
+url: "https://niklas-heringer.com/research/system-one-ai-cybersecurity/"
+abstract: >-
+  Reproducible pilot on synthetic HTTP response triage. Four decision models (Laya, GLiNER2.5-Decide,
+  Jev 1.13.0 and OpenAI's Decisions API) and three generative LLM settings act as a gate in front of an
+  expensive reasoning model. Every model output is committed, and one command recomputes every number.
+keywords:
+  - security research
+  - decision models
+  - large language models
+  - anomaly detection
+  - calibration
+  - prompt injection
+  - request smuggling

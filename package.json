@@ -1,5 +1,5 @@
 {
-  "name": "system-one-http-triage-harness",
+  "name": "system-one-harness",
   "version": "1.0.0",
   "description": "Pilot harness: can a cheap decision model gate an expensive reasoning model on HTTP response triage without losing the anomalies that matter?",
   "license": "MIT",

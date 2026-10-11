@@ -1,4 +1,6 @@
-# System One HTTP Triage Harness
+# System One Harness
+
+[![Reproduce](https://github.com/mev0lent/system-one-harness/actions/workflows/reproduce.yml/badge.svg)](https://github.com/mev0lent/system-one-harness/actions/workflows/reproduce.yml) [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 **Can a cheap decision model decide which HTTP responses deserve an expensive reasoning model, sparing that model most of its work, without throwing away the anomalies that matter?**
 
@@ -70,7 +72,7 @@ npm ci
 npm run reproduce
 ```
 
-`npm run reproduce` runs the seven analysis scripts in order. They read the committed model outputs in `results/`, rewrite the summary files there, and print the tables from the article. On a clean checkout the summaries come out byte-identical.
+`npm run reproduce` runs the seven analysis scripts in order. They read the committed model outputs in `results/`, rewrite the summary files there, and print the tables from the article. On a clean checkout the summaries come out byte-identical. The "Reproduce" workflow checks exactly that on every push.
 
 You can also run them one by one:
 
@@ -197,10 +199,14 @@ If you have labelled traffic and run this harness on it, I would love to hear wh
 
 ## Citation
 
+GitHub shows a "Cite this repository" button generated from `CITATION.cff`. In plain text:
+
 ```text
-Niklas Heringer (2026). System One HTTP Triage Harness: a pilot on decision models
-as a triage gate for security research. https://niklas-heringer.com/research/system-one-ai-cybersecurity/
+Niklas Heringer (2026). System One Harness: a pilot on decision models as a triage gate
+for security research. Version 1.0.0. https://github.com/mev0lent/system-one-harness
 ```
+
+The article cites version `v1.0.0`. Later changes are listed in the GitHub releases.
 
 ## License
 
