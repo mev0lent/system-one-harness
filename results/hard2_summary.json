@@ -1,0 +1,485 @@
+{
+  "protocol": "18.11",
+  "status": "frozen-setting exploratory; template author saw first-tier results",
+  "n": 250,
+  "refusals": {
+    "openai": 0,
+    "jev": 0,
+    "medium": 0
+  },
+  "verdict": "targets met",
+  "policies": {
+    "cascade": {
+      "recall": {
+        "estimate": 0.96,
+        "lo": 0.9149721852818016,
+        "hi": 0.9851814788851019,
+        "successes": 144,
+        "total": 150
+      },
+      "false_escalation": {
+        "estimate": 0.05,
+        "lo": 0.016431879182051967,
+        "hi": 0.11283491110546326,
+        "successes": 5,
+        "total": 100
+      },
+      "reasoning_calls_at_1pct": {
+        "estimate": 0.08916666666666667,
+        "lo": 0.03687569773251305,
+        "hi": 0.17393280583834606,
+        "call_rate_anomaly": {
+          "estimate": 0.006666666666666667,
+          "lo": 0.00008385503201597958,
+          "hi": 0.04178444748645274,
+          "successes": 1,
+          "total": 150
+        },
+        "call_rate_normal": {
+          "estimate": 0.09,
+          "lo": 0.03724733250726554,
+          "hi": 0.17526763774089044,
+          "successes": 9,
+          "total": 100
+        }
+      },
+      "escalated_at_1pct": 0.0591
+    },
+    "heuristic": {
+      "recall": {
+        "estimate": 0.9733333333333334,
+        "lo": 0.9331321233225107,
+        "hi": 0.9926874536019916,
+        "successes": 146,
+        "total": 150
+      },
+      "false_escalation": {
+        "estimate": 1,
+        "lo": 0.9637833073548236,
+        "hi": 1,
+        "successes": 100,
+        "total": 100
+      },
+      "reasoning_calls_at_1pct": {
+        "estimate": 0,
+        "lo": 0,
+        "hi": 0,
+        "call_rate_anomaly": {
+          "estimate": 0,
+          "lo": 0,
+          "hi": 0.028790921394527734,
+          "successes": 0,
+          "total": 150
+        },
+        "call_rate_normal": {
+          "estimate": 0,
+          "lo": 0,
+          "hi": 0.042874030238438485,
+          "successes": 0,
+          "total": 100
+        }
+      },
+      "escalated_at_1pct": 0.9997333333333334
+    },
+    "decisions_zero_shot": {
+      "recall": {
+        "estimate": 0.98,
+        "lo": 0.9426657777117946,
+        "hi": 0.9958563747187794,
+        "successes": 147,
+        "total": 150
+      },
+      "false_escalation": {
+        "estimate": 0.24,
+        "lo": 0.16022461317144615,
+        "hi": 0.3357354892709997,
+        "successes": 24,
+        "total": 100
+      },
+      "reasoning_calls_at_1pct": {
+        "estimate": 0,
+        "lo": 0,
+        "hi": 0,
+        "call_rate_anomaly": {
+          "estimate": 0,
+          "lo": 0,
+          "hi": 0.028790921394527734,
+          "successes": 0,
+          "total": 150
+        },
+        "call_rate_normal": {
+          "estimate": 0,
+          "lo": 0,
+          "hi": 0.042874030238438485,
+          "successes": 0,
+          "total": 100
+        }
+      },
+      "escalated_at_1pct": 0.24739999999999998
+    },
+    "decisions_s1b": {
+      "recall": {
+        "estimate": 0.9533333333333334,
+        "lo": 0.9062141350122037,
+        "hi": 0.9810344303654226,
+        "successes": 143,
+        "total": 150
+      },
+      "false_escalation": {
+        "estimate": 0.02,
+        "lo": 0.002431336823942545,
+        "hi": 0.07038393247107005,
+        "successes": 2,
+        "total": 100
+      },
+      "reasoning_calls_at_1pct": {
+        "estimate": 0,
+        "lo": 0,
+        "hi": 0,
+        "call_rate_anomaly": {
+          "estimate": 0,
+          "lo": 0,
+          "hi": 0.028790921394527734,
+          "successes": 0,
+          "total": 150
+        },
+        "call_rate_normal": {
+          "estimate": 0,
+          "lo": 0,
+          "hi": 0.042874030238438485,
+          "successes": 0,
+          "total": 100
+        }
+      },
+      "escalated_at_1pct": 0.029333333333333336
+    },
+    "fingerprints_plus_decisions_s1b": {
+      "recall": {
+        "estimate": 0.9533333333333334,
+        "lo": 0.9062141350122037,
+        "hi": 0.9810344303654226,
+        "successes": 143,
+        "total": 150
+      },
+      "false_escalation": {
+        "estimate": 0.02,
+        "lo": 0.002431336823942545,
+        "hi": 0.07038393247107005,
+        "successes": 2,
+        "total": 100
+      },
+      "reasoning_calls_at_1pct": {
+        "estimate": 0,
+        "lo": 0,
+        "hi": 0,
+        "call_rate_anomaly": {
+          "estimate": 0,
+          "lo": 0,
+          "hi": 0.028790921394527734,
+          "successes": 0,
+          "total": 150
+        },
+        "call_rate_normal": {
+          "estimate": 0,
+          "lo": 0,
+          "hi": 0.042874030238438485,
+          "successes": 0,
+          "total": 100
+        }
+      },
+      "escalated_at_1pct": 0.029333333333333336
+    },
+    "luna_reasoning_alone": {
+      "recall": {
+        "estimate": 1,
+        "lo": 0.9757074028338915,
+        "hi": 1,
+        "successes": 150,
+        "total": 150
+      },
+      "false_escalation": {
+        "estimate": 0.15,
+        "lo": 0.08645438564164773,
+        "hi": 0.2353075001489564,
+        "successes": 15,
+        "total": 100
+      },
+      "reasoning_calls_at_1pct": {
+        "estimate": 1,
+        "lo": 1,
+        "hi": 1,
+        "call_rate_anomaly": {
+          "estimate": 1,
+          "lo": 0.9712090786054723,
+          "hi": 1,
+          "successes": 150,
+          "total": 150
+        },
+        "call_rate_normal": {
+          "estimate": 1,
+          "lo": 0.9571259697615615,
+          "hi": 1,
+          "successes": 100,
+          "total": 100
+        }
+      },
+      "escalated_at_1pct": 0.1585
+    },
+    "jev_zero_shot": {
+      "recall": {
+        "estimate": 0.9066666666666666,
+        "lo": 0.8483614686963519,
+        "hi": 0.9480298277055217,
+        "successes": 136,
+        "total": 150
+      },
+      "false_escalation": {
+        "estimate": 0.24,
+        "lo": 0.16022461317144615,
+        "hi": 0.3357354892709997,
+        "successes": 24,
+        "total": 100
+      },
+      "reasoning_calls_at_1pct": {
+        "estimate": 0,
+        "lo": 0,
+        "hi": 0,
+        "call_rate_anomaly": {
+          "estimate": 0,
+          "lo": 0,
+          "hi": 0.028790921394527734,
+          "successes": 0,
+          "total": 150
+        },
+        "call_rate_normal": {
+          "estimate": 0,
+          "lo": 0,
+          "hi": 0.042874030238438485,
+          "successes": 0,
+          "total": 100
+        }
+      },
+      "escalated_at_1pct": 0.24666666666666665
+    }
+  },
+  "per_template": {
+    "normal_public_route": {
+      "label": "normal",
+      "estimate": 0.13793103448275862,
+      "lo": 0.038894831295438914,
+      "hi": 0.3166406094391375,
+      "successes": 4,
+      "total": 29
+    },
+    "normal_policy_allow": {
+      "label": "normal",
+      "estimate": 0.05263157894736842,
+      "lo": 0.001331628804179422,
+      "hi": 0.2602806541952143,
+      "successes": 1,
+      "total": 19
+    },
+    "normal_origin_healthy": {
+      "label": "normal",
+      "estimate": 0,
+      "lo": 0,
+      "hi": 0.16109761521907956,
+      "successes": 0,
+      "total": 21
+    },
+    "normal_trace_marker": {
+      "label": "normal",
+      "estimate": 0,
+      "lo": 0,
+      "hi": 0.11218874692236996,
+      "successes": 0,
+      "total": 31
+    },
+    "filter_rate_quota": {
+      "label": "filtering",
+      "estimate": 1,
+      "lo": 0.6305833524471807,
+      "hi": 1,
+      "successes": 8,
+      "total": 8
+    },
+    "filter_legal_policy": {
+      "label": "filtering",
+      "estimate": 1,
+      "lo": 0.6637328831200571,
+      "hi": 1,
+      "successes": 9,
+      "total": 9
+    },
+    "filter_browser_challenge": {
+      "label": "filtering",
+      "estimate": 1,
+      "lo": 0.6305833524471807,
+      "hi": 1,
+      "successes": 8,
+      "total": 8
+    },
+    "filter_edge_acl": {
+      "label": "filtering",
+      "estimate": 1,
+      "lo": 0.4781762498950186,
+      "hi": 1,
+      "successes": 5,
+      "total": 5
+    },
+    "app_schema_rejection": {
+      "label": "app_error",
+      "estimate": 1,
+      "lo": 0.5903836027749967,
+      "hi": 1,
+      "successes": 7,
+      "total": 7
+    },
+    "app_transaction_failed": {
+      "label": "app_error",
+      "estimate": 1,
+      "lo": 0.5407418735600995,
+      "hi": 1,
+      "successes": 6,
+      "total": 6
+    },
+    "app_state_conflict": {
+      "label": "app_error",
+      "estimate": 1,
+      "lo": 0.7150858470818455,
+      "hi": 1,
+      "successes": 11,
+      "total": 11
+    },
+    "app_missing_field": {
+      "label": "app_error",
+      "estimate": 1,
+      "lo": 0.5407418735600995,
+      "hi": 1,
+      "successes": 6,
+      "total": 6
+    },
+    "parser_other_request": {
+      "label": "parser",
+      "estimate": 1,
+      "lo": 0.6637328831200571,
+      "hi": 1,
+      "successes": 9,
+      "total": 9
+    },
+    "parser_frame_disagreement": {
+      "label": "parser",
+      "estimate": 1,
+      "lo": 0.6637328831200571,
+      "hi": 1,
+      "successes": 9,
+      "total": 9
+    },
+    "parser_boundary_shift": {
+      "label": "parser",
+      "estimate": 1,
+      "lo": 0.4781762498950186,
+      "hi": 1,
+      "successes": 5,
+      "total": 5
+    },
+    "parser_authority_split": {
+      "label": "parser",
+      "estimate": 1,
+      "lo": 0.5903836027749967,
+      "hi": 1,
+      "successes": 7,
+      "total": 7
+    },
+    "connection_upstream_deadline": {
+      "label": "connection",
+      "estimate": 1,
+      "lo": 0.6637328831200571,
+      "hi": 1,
+      "successes": 9,
+      "total": 9
+    },
+    "connection_dns_unreachable": {
+      "label": "connection",
+      "estimate": 1,
+      "lo": 0.5407418735600995,
+      "hi": 1,
+      "successes": 6,
+      "total": 6
+    },
+    "connection_no_response": {
+      "label": "connection",
+      "estimate": 1,
+      "lo": 0.6305833524471807,
+      "hi": 1,
+      "successes": 8,
+      "total": 8
+    },
+    "connection_peer_reset": {
+      "label": "connection",
+      "estimate": 1,
+      "lo": 0.5903836027749967,
+      "hi": 1,
+      "successes": 7,
+      "total": 7
+    },
+    "disclosure_private_address": {
+      "label": "disclosure",
+      "estimate": 0.25,
+      "lo": 0.03185402624994424,
+      "hi": 0.6508557944128242,
+      "successes": 2,
+      "total": 8
+    },
+    "disclosure_runtime_version": {
+      "label": "disclosure",
+      "estimate": 1,
+      "lo": 0.6915028921812392,
+      "hi": 1,
+      "successes": 10,
+      "total": 10
+    },
+    "disclosure_source_path": {
+      "label": "disclosure",
+      "estimate": 1,
+      "lo": 0.4781762498950186,
+      "hi": 1,
+      "successes": 5,
+      "total": 5
+    },
+    "disclosure_stack_frame": {
+      "label": "disclosure",
+      "estimate": 1,
+      "lo": 0.5903836027749967,
+      "hi": 1,
+      "successes": 7,
+      "total": 7
+    }
+  },
+  "misses": [
+    {
+      "id": "hard2-disclosure-0",
+      "template": "disclosure_private_address"
+    },
+    {
+      "id": "hard2-disclosure-1",
+      "template": "disclosure_private_address"
+    },
+    {
+      "id": "hard2-disclosure-15",
+      "template": "disclosure_private_address"
+    },
+    {
+      "id": "hard2-disclosure-19",
+      "template": "disclosure_private_address"
+    },
+    {
+      "id": "hard2-disclosure-22",
+      "template": "disclosure_private_address"
+    },
+    {
+      "id": "hard2-disclosure-27",
+      "template": "disclosure_private_address"
+    }
+  ]
+}

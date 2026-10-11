@@ -1,0 +1,991 @@
+{
+  "models": [
+    "jev",
+    "openai",
+    "gen_none",
+    "gen_medium",
+    "gen_sol"
+  ],
+  "per_model": {
+    "jev": {
+      "refusals": {
+        "dev": 0,
+        "test": 0,
+        "hard": 0
+      },
+      "test": {
+        "zero_shot": {
+          "accuracy": {
+            "est": 0.9016666666666666,
+            "lo": 0.8783333333333333,
+            "hi": 0.925
+          },
+          "macroF1": 0.901864579202777,
+          "ece": 0.04573333333333222,
+          "brier": 0.14396650000000097,
+          "gate": {
+            "tau": 0.3,
+            "escalated": 0.8316666666666667,
+            "recall": 0.998,
+            "false_escalation": 0,
+            "at_1pct": 0.009980000000000001
+          }
+        },
+        "head_S1b": {
+          "accuracy": {
+            "est": 0.9716666666666667,
+            "lo": 0.9583333333333334,
+            "hi": 0.985
+          },
+          "ece": 0.037579881969803,
+          "brier": 0.04287729592149409,
+          "gate": {
+            "tau": 0.3,
+            "escalated": 0.8333333333333334,
+            "recall": 1,
+            "false_escalation": 0,
+            "at_1pct": 0.01
+          },
+          "gate_with_fingerprints": {
+            "escalated": 0.8333333333333334,
+            "recall": 1,
+            "false_escalation": 0,
+            "at_1pct": 0.01
+          }
+        }
+      },
+      "hard": {
+        "zero_shot": {
+          "accuracy": {
+            "est": 0.6866666666666666,
+            "lo": 0.6333333333333333,
+            "hi": 0.7366666666666667
+          },
+          "macroF1": 0.6900132631057021,
+          "ece": 0.11050000000000003,
+          "brier": 0.40328466666666873,
+          "gate": {
+            "tau": 0.3,
+            "escalated": 0.8866666666666667,
+            "recall": 0.948,
+            "false_escalation": 0.58,
+            "at_1pct": 0.58368
+          }
+        },
+        "head_S1b": {
+          "accuracy": {
+            "est": 0.7833333333333333,
+            "lo": 0.7366666666666667,
+            "hi": 0.83
+          },
+          "ece": 0.12843584065215663,
+          "brier": 0.37593577710882997,
+          "gate": {
+            "tau": 0.3,
+            "escalated": 0.9366666666666666,
+            "recall": 0.996,
+            "false_escalation": 0.64,
+            "at_1pct": 0.64356
+          },
+          "gate_with_fingerprints": {
+            "escalated": 0.9366666666666666,
+            "recall": 0.996,
+            "false_escalation": 0.64,
+            "at_1pct": 0.64356
+          }
+        },
+        "by_template": {
+          "normal: Vary + ETag": {
+            "n": 12,
+            "zero_shot": 8,
+            "head": 8
+          },
+          "normal: new session cookie": {
+            "n": 20,
+            "zero_shot": 12,
+            "head": 14
+          },
+          "normal: cache headers": {
+            "n": 18,
+            "zero_shot": 9,
+            "head": 10
+          },
+          "filtering": {
+            "n": 50,
+            "zero_shot": 50,
+            "head": 50
+          },
+          "app_error": {
+            "n": 50,
+            "zero_shot": 50,
+            "head": 50
+          },
+          "parser: two HTML documents": {
+            "n": 14,
+            "zero_shot": 14,
+            "head": 14
+          },
+          "parser: 501": {
+            "n": 13,
+            "zero_shot": 13,
+            "head": 13
+          },
+          "parser: 505": {
+            "n": 9,
+            "zero_shot": 9,
+            "head": 9
+          },
+          "parser: second response in body": {
+            "n": 14,
+            "zero_shot": 13,
+            "head": 14
+          },
+          "connection: truncated body": {
+            "n": 14,
+            "zero_shot": 10,
+            "head": 14
+          },
+          "connection: 520": {
+            "n": 15,
+            "zero_shot": 15,
+            "head": 15
+          },
+          "connection: DNS timeout": {
+            "n": 15,
+            "zero_shot": 15,
+            "head": 15
+          },
+          "connection: upstream closed": {
+            "n": 6,
+            "zero_shot": 6,
+            "head": 6
+          },
+          "disclosure: .git/config": {
+            "n": 13,
+            "zero_shot": 13,
+            "head": 13
+          },
+          "disclosure: AWS key ID": {
+            "n": 13,
+            "zero_shot": 13,
+            "head": 13
+          },
+          "disclosure: internal hostname in header": {
+            "n": 16,
+            "zero_shot": 8,
+            "head": 15
+          },
+          "disclosure: Java stack trace": {
+            "n": 8,
+            "zero_shot": 8,
+            "head": 8
+          }
+        }
+      },
+      "latency_ms": {
+        "p50": 231.3698000000004,
+        "p95": 276.48279999999977
+      },
+      "tokens_mean": {
+        "input": 553.004,
+        "output": 0,
+        "reasoning": 0
+      },
+      "cost_per_million_decisions": 23.226168
+    },
+    "openai": {
+      "refusals": {
+        "dev": 0,
+        "test": 0,
+        "hard": 0
+      },
+      "test": {
+        "zero_shot": {
+          "accuracy": {
+            "est": 0.8283333333333334,
+            "lo": 0.7983333333333333,
+            "hi": 0.8583333333333333
+          },
+          "macroF1": 0.8249319934518323,
+          "ece": 0.07851666666666725,
+          "brier": 0.26168133333333726,
+          "gate": {
+            "tau": 0.3,
+            "escalated": 0.855,
+            "recall": 0.996,
+            "false_escalation": 0.15,
+            "at_1pct": 0.15846
+          }
+        },
+        "head_S1b": {
+          "accuracy": {
+            "est": 0.9133333333333333,
+            "lo": 0.89,
+            "hi": 0.935
+          },
+          "ece": 0.04312065656370332,
+          "brier": 0.1174580863207985,
+          "gate": {
+            "tau": 0.3,
+            "escalated": 0.8216666666666667,
+            "recall": 0.986,
+            "false_escalation": 0,
+            "at_1pct": 0.00986
+          },
+          "gate_with_fingerprints": {
+            "escalated": 0.8216666666666667,
+            "recall": 0.986,
+            "false_escalation": 0,
+            "at_1pct": 0.00986
+          }
+        }
+      },
+      "hard": {
+        "zero_shot": {
+          "accuracy": {
+            "est": 0.7966666666666666,
+            "lo": 0.75,
+            "hi": 0.84
+          },
+          "macroF1": 0.7883947399203306,
+          "ece": 0.11636666666666669,
+          "brier": 0.3116086666666678,
+          "gate": {
+            "tau": 0.3,
+            "escalated": 0.85,
+            "recall": 0.956,
+            "false_escalation": 0.32,
+            "at_1pct": 0.32636000000000004
+          }
+        },
+        "head_S1b": {
+          "accuracy": {
+            "est": 0.87,
+            "lo": 0.8333333333333334,
+            "hi": 0.91
+          },
+          "ece": 0.06766467828590333,
+          "brier": 0.20419867420297486,
+          "gate": {
+            "tau": 0.3,
+            "escalated": 0.7733333333333333,
+            "recall": 0.928,
+            "false_escalation": 0,
+            "at_1pct": 0.00928
+          },
+          "gate_with_fingerprints": {
+            "escalated": 0.7933333333333333,
+            "recall": 0.952,
+            "false_escalation": 0,
+            "at_1pct": 0.009519999999999999
+          }
+        },
+        "by_template": {
+          "normal: Vary + ETag": {
+            "n": 12,
+            "zero_shot": 6,
+            "head": 0
+          },
+          "normal: new session cookie": {
+            "n": 20,
+            "zero_shot": 5,
+            "head": 0
+          },
+          "normal: cache headers": {
+            "n": 18,
+            "zero_shot": 5,
+            "head": 0
+          },
+          "filtering": {
+            "n": 50,
+            "zero_shot": 50,
+            "head": 50
+          },
+          "app_error": {
+            "n": 50,
+            "zero_shot": 50,
+            "head": 50
+          },
+          "parser: two HTML documents": {
+            "n": 14,
+            "zero_shot": 14,
+            "head": 12
+          },
+          "parser: 501": {
+            "n": 13,
+            "zero_shot": 13,
+            "head": 13
+          },
+          "parser: 505": {
+            "n": 9,
+            "zero_shot": 9,
+            "head": 9
+          },
+          "parser: second response in body": {
+            "n": 14,
+            "zero_shot": 14,
+            "head": 10
+          },
+          "connection: truncated body": {
+            "n": 14,
+            "zero_shot": 13,
+            "head": 11
+          },
+          "connection: 520": {
+            "n": 15,
+            "zero_shot": 15,
+            "head": 15
+          },
+          "connection: DNS timeout": {
+            "n": 15,
+            "zero_shot": 15,
+            "head": 15
+          },
+          "connection: upstream closed": {
+            "n": 6,
+            "zero_shot": 6,
+            "head": 6
+          },
+          "disclosure: .git/config": {
+            "n": 13,
+            "zero_shot": 13,
+            "head": 13
+          },
+          "disclosure: AWS key ID": {
+            "n": 13,
+            "zero_shot": 13,
+            "head": 13
+          },
+          "disclosure: internal hostname in header": {
+            "n": 16,
+            "zero_shot": 6,
+            "head": 7
+          },
+          "disclosure: Java stack trace": {
+            "n": 8,
+            "zero_shot": 8,
+            "head": 8
+          }
+        }
+      },
+      "latency_ms": {
+        "p50": 118.14070000000356,
+        "p95": 236.4326000000001
+      },
+      "tokens_mean": {
+        "input": 318.45733333333334,
+        "output": 0,
+        "reasoning": 0
+      },
+      "cost_per_million_decisions": 31.845733333333335
+    },
+    "gen_none": {
+      "refusals": {
+        "dev": 0,
+        "test": 0,
+        "hard": 0
+      },
+      "test": {
+        "zero_shot": {
+          "accuracy": {
+            "est": 0.8533333333333334,
+            "lo": 0.8233333333333334,
+            "hi": 0.8816666666666667
+          },
+          "macroF1": 0.8546273744716112,
+          "ece": 0.0457147898721615,
+          "brier": 0.2281674061907423,
+          "gate": {
+            "tau": 0.3,
+            "escalated": 0.8333333333333334,
+            "recall": 1,
+            "false_escalation": 0,
+            "at_1pct": 0.01
+          }
+        },
+        "head_S1b": {
+          "accuracy": {
+            "est": 0.905,
+            "lo": 0.8816666666666667,
+            "hi": 0.9266666666666666
+          },
+          "ece": 0.03436279788415704,
+          "brier": 0.1420364524360586,
+          "gate": {
+            "tau": 0.3,
+            "escalated": 0.8333333333333334,
+            "recall": 1,
+            "false_escalation": 0,
+            "at_1pct": 0.01
+          },
+          "gate_with_fingerprints": {
+            "escalated": 0.8333333333333334,
+            "recall": 1,
+            "false_escalation": 0,
+            "at_1pct": 0.01
+          }
+        }
+      },
+      "hard": {
+        "zero_shot": {
+          "accuracy": {
+            "est": 0.7533333333333333,
+            "lo": 0.7033333333333334,
+            "hi": 0.8033333333333333
+          },
+          "macroF1": 0.7417042331490983,
+          "ece": 0.13062687312687285,
+          "brier": 0.3961935238642109,
+          "gate": {
+            "tau": 0.3,
+            "escalated": 0.8633333333333333,
+            "recall": 0.952,
+            "false_escalation": 0.42,
+            "at_1pct": 0.42532
+          }
+        },
+        "head_S1b": {
+          "accuracy": {
+            "est": 0.7733333333333333,
+            "lo": 0.7266666666666667,
+            "hi": 0.82
+          },
+          "ece": 0.07206661516437812,
+          "brier": 0.35625024840254194,
+          "gate": {
+            "tau": 0.3,
+            "escalated": 0.8633333333333333,
+            "recall": 0.952,
+            "false_escalation": 0.42,
+            "at_1pct": 0.42532
+          },
+          "gate_with_fingerprints": {
+            "escalated": 0.8633333333333333,
+            "recall": 0.952,
+            "false_escalation": 0.42,
+            "at_1pct": 0.42532
+          }
+        },
+        "by_template": {
+          "normal: Vary + ETag": {
+            "n": 12,
+            "zero_shot": 7,
+            "head": 7
+          },
+          "normal: new session cookie": {
+            "n": 20,
+            "zero_shot": 9,
+            "head": 9
+          },
+          "normal: cache headers": {
+            "n": 18,
+            "zero_shot": 5,
+            "head": 5
+          },
+          "filtering": {
+            "n": 50,
+            "zero_shot": 50,
+            "head": 50
+          },
+          "app_error": {
+            "n": 50,
+            "zero_shot": 50,
+            "head": 50
+          },
+          "parser: two HTML documents": {
+            "n": 14,
+            "zero_shot": 14,
+            "head": 14
+          },
+          "parser: 501": {
+            "n": 13,
+            "zero_shot": 13,
+            "head": 13
+          },
+          "parser: 505": {
+            "n": 9,
+            "zero_shot": 9,
+            "head": 9
+          },
+          "parser: second response in body": {
+            "n": 14,
+            "zero_shot": 14,
+            "head": 14
+          },
+          "connection: truncated body": {
+            "n": 14,
+            "zero_shot": 14,
+            "head": 14
+          },
+          "connection: 520": {
+            "n": 15,
+            "zero_shot": 15,
+            "head": 15
+          },
+          "connection: DNS timeout": {
+            "n": 15,
+            "zero_shot": 15,
+            "head": 15
+          },
+          "connection: upstream closed": {
+            "n": 6,
+            "zero_shot": 6,
+            "head": 6
+          },
+          "disclosure: .git/config": {
+            "n": 13,
+            "zero_shot": 13,
+            "head": 13
+          },
+          "disclosure: AWS key ID": {
+            "n": 13,
+            "zero_shot": 13,
+            "head": 13
+          },
+          "disclosure: internal hostname in header": {
+            "n": 16,
+            "zero_shot": 4,
+            "head": 4
+          },
+          "disclosure: Java stack trace": {
+            "n": 8,
+            "zero_shot": 8,
+            "head": 8
+          }
+        }
+      },
+      "latency_ms": {
+        "p50": 1542.3185999999987,
+        "p95": 2269.4717999999993
+      },
+      "tokens_mean": {
+        "input": 352.1913333333333,
+        "output": 44.94,
+        "reasoning": 0
+      },
+      "cost_per_million_decisions": 57.68913333333333
+    },
+    "gen_medium": {
+      "refusals": {
+        "dev": 0,
+        "test": 0,
+        "hard": 0
+      },
+      "test": {
+        "zero_shot": {
+          "accuracy": {
+            "est": 0.91,
+            "lo": 0.8883333333333333,
+            "hi": 0.9316666666666666
+          },
+          "macroF1": 0.9102669262174782,
+          "ece": 0.05353564727849707,
+          "brier": 0.13337703435153977,
+          "gate": {
+            "tau": 0.3,
+            "escalated": 0.8333333333333334,
+            "recall": 1,
+            "false_escalation": 0,
+            "at_1pct": 0.01
+          }
+        },
+        "head_S1b": {
+          "accuracy": {
+            "est": 0.9433333333333334,
+            "lo": 0.9233333333333333,
+            "hi": 0.9616666666666667
+          },
+          "ece": 0.02218509059440906,
+          "brier": 0.07956489961089691,
+          "gate": {
+            "tau": 0.3,
+            "escalated": 0.8333333333333334,
+            "recall": 1,
+            "false_escalation": 0,
+            "at_1pct": 0.01
+          },
+          "gate_with_fingerprints": {
+            "escalated": 0.8333333333333334,
+            "recall": 1,
+            "false_escalation": 0,
+            "at_1pct": 0.01
+          }
+        }
+      },
+      "hard": {
+        "zero_shot": {
+          "accuracy": {
+            "est": 0.8066666666666666,
+            "lo": 0.76,
+            "hi": 0.85
+          },
+          "macroF1": 0.8057429096155649,
+          "ece": 0.09035864074443285,
+          "brier": 0.31070205063169,
+          "gate": {
+            "tau": 0.3,
+            "escalated": 0.9466666666666667,
+            "recall": 1,
+            "false_escalation": 0.68,
+            "at_1pct": 0.6832
+          }
+        },
+        "head_S1b": {
+          "accuracy": {
+            "est": 0.8266666666666667,
+            "lo": 0.7833333333333333,
+            "hi": 0.8666666666666667
+          },
+          "ece": 0.10472945784136382,
+          "brier": 0.2895228135886562,
+          "gate": {
+            "tau": 0.3,
+            "escalated": 0.9466666666666667,
+            "recall": 1,
+            "false_escalation": 0.68,
+            "at_1pct": 0.6832
+          },
+          "gate_with_fingerprints": {
+            "escalated": 0.9466666666666667,
+            "recall": 1,
+            "false_escalation": 0.68,
+            "at_1pct": 0.6832
+          }
+        },
+        "by_template": {
+          "normal: Vary + ETag": {
+            "n": 12,
+            "zero_shot": 7,
+            "head": 7
+          },
+          "normal: new session cookie": {
+            "n": 20,
+            "zero_shot": 13,
+            "head": 13
+          },
+          "normal: cache headers": {
+            "n": 18,
+            "zero_shot": 14,
+            "head": 14
+          },
+          "filtering": {
+            "n": 50,
+            "zero_shot": 50,
+            "head": 50
+          },
+          "app_error": {
+            "n": 50,
+            "zero_shot": 50,
+            "head": 50
+          },
+          "parser: two HTML documents": {
+            "n": 14,
+            "zero_shot": 14,
+            "head": 14
+          },
+          "parser: 501": {
+            "n": 13,
+            "zero_shot": 13,
+            "head": 13
+          },
+          "parser: 505": {
+            "n": 9,
+            "zero_shot": 9,
+            "head": 9
+          },
+          "parser: second response in body": {
+            "n": 14,
+            "zero_shot": 14,
+            "head": 14
+          },
+          "connection: truncated body": {
+            "n": 14,
+            "zero_shot": 14,
+            "head": 14
+          },
+          "connection: 520": {
+            "n": 15,
+            "zero_shot": 15,
+            "head": 15
+          },
+          "connection: DNS timeout": {
+            "n": 15,
+            "zero_shot": 15,
+            "head": 15
+          },
+          "connection: upstream closed": {
+            "n": 6,
+            "zero_shot": 6,
+            "head": 6
+          },
+          "disclosure: .git/config": {
+            "n": 13,
+            "zero_shot": 13,
+            "head": 13
+          },
+          "disclosure: AWS key ID": {
+            "n": 13,
+            "zero_shot": 13,
+            "head": 13
+          },
+          "disclosure: internal hostname in header": {
+            "n": 16,
+            "zero_shot": 16,
+            "head": 16
+          },
+          "disclosure: Java stack trace": {
+            "n": 8,
+            "zero_shot": 8,
+            "head": 8
+          }
+        }
+      },
+      "latency_ms": {
+        "p50": 2001.1368000000002,
+        "p95": 3949.592000000004
+      },
+      "tokens_mean": {
+        "input": 352.1913333333333,
+        "output": 129.14666666666668,
+        "reasoning": 80.852
+      },
+      "cost_per_million_decisions": 99.79246666666667
+    },
+    "gen_sol": {
+      "refusals": {
+        "dev": 0,
+        "test": 0,
+        "hard": 0
+      },
+      "test": {
+        "zero_shot": {
+          "accuracy": {
+            "est": 0.9466666666666667,
+            "lo": 0.9283333333333333,
+            "hi": 0.9633333333333334
+          },
+          "macroF1": 0.9465159102884484,
+          "ece": 0.0330194999999979,
+          "brier": 0.07794917969166654,
+          "gate": {
+            "tau": 0.3,
+            "escalated": 0.8333333333333334,
+            "recall": 1,
+            "false_escalation": 0,
+            "at_1pct": 0.01
+          }
+        },
+        "head_S1b": {
+          "accuracy": {
+            "est": 0.99,
+            "lo": 0.9816666666666667,
+            "hi": 0.9966666666666667
+          },
+          "ece": 0.025745290032690653,
+          "brier": 0.01820883446472291,
+          "gate": {
+            "tau": 0.3,
+            "escalated": 0.8333333333333334,
+            "recall": 1,
+            "false_escalation": 0,
+            "at_1pct": 0.01
+          },
+          "gate_with_fingerprints": {
+            "escalated": 0.8333333333333334,
+            "recall": 1,
+            "false_escalation": 0,
+            "at_1pct": 0.01
+          }
+        }
+      },
+      "hard": {
+        "zero_shot": {
+          "accuracy": {
+            "est": 0.7533333333333333,
+            "lo": 0.7033333333333334,
+            "hi": 0.7966666666666666
+          },
+          "macroF1": 0.7602610965754467,
+          "ece": 0.18457866334991765,
+          "brier": 0.42354351532151874,
+          "gate": {
+            "tau": 0.3,
+            "escalated": 0.9433333333333334,
+            "recall": 1,
+            "false_escalation": 0.66,
+            "at_1pct": 0.6634
+          }
+        },
+        "head_S1b": {
+          "accuracy": {
+            "est": 0.7766666666666666,
+            "lo": 0.73,
+            "hi": 0.82
+          },
+          "ece": 0.1824596438808946,
+          "brier": 0.3930201021365991,
+          "gate": {
+            "tau": 0.3,
+            "escalated": 0.9433333333333334,
+            "recall": 1,
+            "false_escalation": 0.66,
+            "at_1pct": 0.6634
+          },
+          "gate_with_fingerprints": {
+            "escalated": 0.9433333333333334,
+            "recall": 1,
+            "false_escalation": 0.66,
+            "at_1pct": 0.6634
+          }
+        },
+        "by_template": {
+          "normal: Vary + ETag": {
+            "n": 12,
+            "zero_shot": 5,
+            "head": 5
+          },
+          "normal: new session cookie": {
+            "n": 20,
+            "zero_shot": 13,
+            "head": 13
+          },
+          "normal: cache headers": {
+            "n": 18,
+            "zero_shot": 15,
+            "head": 15
+          },
+          "filtering": {
+            "n": 50,
+            "zero_shot": 50,
+            "head": 50
+          },
+          "app_error": {
+            "n": 50,
+            "zero_shot": 50,
+            "head": 50
+          },
+          "parser: two HTML documents": {
+            "n": 14,
+            "zero_shot": 14,
+            "head": 14
+          },
+          "parser: 501": {
+            "n": 13,
+            "zero_shot": 13,
+            "head": 13
+          },
+          "parser: 505": {
+            "n": 9,
+            "zero_shot": 9,
+            "head": 9
+          },
+          "parser: second response in body": {
+            "n": 14,
+            "zero_shot": 14,
+            "head": 14
+          },
+          "connection: truncated body": {
+            "n": 14,
+            "zero_shot": 14,
+            "head": 14
+          },
+          "connection: 520": {
+            "n": 15,
+            "zero_shot": 15,
+            "head": 15
+          },
+          "connection: DNS timeout": {
+            "n": 15,
+            "zero_shot": 15,
+            "head": 15
+          },
+          "connection: upstream closed": {
+            "n": 6,
+            "zero_shot": 6,
+            "head": 6
+          },
+          "disclosure: .git/config": {
+            "n": 13,
+            "zero_shot": 13,
+            "head": 13
+          },
+          "disclosure: AWS key ID": {
+            "n": 13,
+            "zero_shot": 13,
+            "head": 13
+          },
+          "disclosure: internal hostname in header": {
+            "n": 16,
+            "zero_shot": 16,
+            "head": 16
+          },
+          "disclosure: Java stack trace": {
+            "n": 8,
+            "zero_shot": 8,
+            "head": 8
+          }
+        }
+      },
+      "latency_ms": {
+        "p50": 2172.02840000001,
+        "p95": 3595.8006999999925
+      },
+      "tokens_mean": {
+        "input": 352.1913333333333,
+        "output": 115.90866666666666,
+        "reasoning": 68.682
+      },
+      "cost_per_million_decisions": 1863.4693333333332
+    }
+  },
+  "paired_vs_decisions": {
+    "jev": {
+      "test": {
+        "est": 0.07333333333333325,
+        "lo": 0.04500000000000004,
+        "hi": 0.09999999999999998
+      },
+      "hard": {
+        "est": -0.10999999999999999,
+        "lo": -0.16000000000000003,
+        "hi": -0.06333333333333335
+      }
+    },
+    "gen_none": {
+      "test": {
+        "est": 0.025000000000000022,
+        "lo": -0.00666666666666671,
+        "hi": 0.05500000000000005
+      },
+      "hard": {
+        "est": -0.043333333333333335,
+        "lo": -0.08666666666666667,
+        "hi": -0.0033333333333332993
+      }
+    },
+    "gen_medium": {
+      "test": {
+        "est": 0.08166666666666667,
+        "lo": 0.05499999999999994,
+        "hi": 0.10999999999999999
+      },
+      "hard": {
+        "est": 0.010000000000000009,
+        "lo": -0.040000000000000036,
+        "hi": 0.05999999999999994
+      }
+    },
+    "gen_sol": {
+      "test": {
+        "est": 0.11833333333333329,
+        "lo": 0.09166666666666656,
+        "hi": 0.1466666666666666
+      },
+      "hard": {
+        "est": -0.043333333333333335,
+        "lo": -0.10333333333333328,
+        "hi": 0.013333333333333308
+      }
+    }
+  }
+}

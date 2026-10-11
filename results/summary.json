@@ -1,0 +1,2575 @@
+{
+  "main": {
+    "heuristic": {
+      "accuracy": 0.945,
+      "macroF1": 0.9457550539230445,
+      "tier": {
+        "easy": 1,
+        "subtle": 0.8674698795180723
+      }
+    },
+    "laya_broad": {
+      "accuracy": 0.31,
+      "macroF1": 0.273850379217532,
+      "ece": 0.2096188333333334,
+      "brier": 0.7880341042333324,
+      "riskCoverage": [
+        {
+          "tau": 0.5,
+          "coverage": 0.38666666666666666,
+          "risk": 0.4870689655172413
+        },
+        {
+          "tau": 0.7,
+          "coverage": 0.225,
+          "risk": 0.3037037037037037
+        },
+        {
+          "tau": 0.8,
+          "coverage": 0.155,
+          "risk": 0.26881720430107525
+        },
+        {
+          "tau": 0.9,
+          "coverage": 0.08666666666666667,
+          "risk": 0.32692307692307687
+        },
+        {
+          "tau": 0.95,
+          "coverage": 0.043333333333333335,
+          "risk": 0.42307692307692313
+        }
+      ],
+      "confusion": [
+        [
+          35,
+          0,
+          58,
+          5,
+          0,
+          2
+        ],
+        [
+          0,
+          12,
+          84,
+          3,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          100,
+          0,
+          0,
+          0
+        ],
+        [
+          7,
+          0,
+          80,
+          13,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          72,
+          2,
+          25,
+          0
+        ],
+        [
+          9,
+          0,
+          87,
+          2,
+          1,
+          1
+        ]
+      ],
+      "pred": [
+        "normal",
+        "normal",
+        "normal",
+        "app_error",
+        "app_error",
+        "normal",
+        "normal",
+        "app_error",
+        "parser",
+        "app_error",
+        "app_error",
+        "normal",
+        "app_error",
+        "normal",
+        "app_error",
+        "app_error",
+        "normal",
+        "app_error",
+        "app_error",
+        "disclosure",
+        "normal",
+        "normal",
+        "normal",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "normal",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "normal",
+        "normal",
+        "normal",
+        "app_error",
+        "app_error",
+        "parser",
+        "normal",
+        "parser",
+        "normal",
+        "normal",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "normal",
+        "normal",
+        "app_error",
+        "app_error",
+        "app_error",
+        "normal",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "normal",
+        "app_error",
+        "app_error",
+        "app_error",
+        "normal",
+        "app_error",
+        "normal",
+        "app_error",
+        "parser",
+        "app_error",
+        "normal",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "normal",
+        "app_error",
+        "app_error",
+        "app_error",
+        "normal",
+        "app_error",
+        "app_error",
+        "app_error",
+        "normal",
+        "app_error",
+        "disclosure",
+        "normal",
+        "app_error",
+        "app_error",
+        "normal",
+        "app_error",
+        "app_error",
+        "normal",
+        "normal",
+        "normal",
+        "normal",
+        "app_error",
+        "normal",
+        "app_error",
+        "app_error",
+        "parser",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "filtering",
+        "filtering",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "filtering",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "filtering",
+        "app_error",
+        "filtering",
+        "app_error",
+        "app_error",
+        "app_error",
+        "filtering",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "filtering",
+        "app_error",
+        "app_error",
+        "filtering",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "filtering",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "parser",
+        "filtering",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "disclosure",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "parser",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "filtering",
+        "filtering",
+        "app_error",
+        "app_error",
+        "parser",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "normal",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "parser",
+        "app_error",
+        "parser",
+        "parser",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "normal",
+        "app_error",
+        "app_error",
+        "parser",
+        "app_error",
+        "normal",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "parser",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "normal",
+        "app_error",
+        "parser",
+        "app_error",
+        "parser",
+        "app_error",
+        "normal",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "parser",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "normal",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "parser",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "normal",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "parser",
+        "app_error",
+        "app_error",
+        "app_error",
+        "parser",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "parser",
+        "app_error",
+        "parser",
+        "app_error",
+        "app_error",
+        "parser",
+        "app_error",
+        "connection",
+        "connection",
+        "app_error",
+        "connection",
+        "app_error",
+        "app_error",
+        "app_error",
+        "connection",
+        "connection",
+        "app_error",
+        "app_error",
+        "connection",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "connection",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "connection",
+        "app_error",
+        "connection",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "connection",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "connection",
+        "app_error",
+        "app_error",
+        "normal",
+        "connection",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "connection",
+        "connection",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "connection",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "connection",
+        "app_error",
+        "app_error",
+        "app_error",
+        "connection",
+        "connection",
+        "app_error",
+        "connection",
+        "app_error",
+        "connection",
+        "connection",
+        "app_error",
+        "app_error",
+        "connection",
+        "connection",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "connection",
+        "parser",
+        "connection",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "disclosure",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "parser",
+        "app_error",
+        "app_error",
+        "app_error",
+        "normal",
+        "app_error",
+        "app_error",
+        "app_error",
+        "normal",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "normal",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "normal",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "normal",
+        "app_error",
+        "app_error",
+        "app_error",
+        "normal",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "normal",
+        "connection",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "parser",
+        "app_error",
+        "normal",
+        "app_error",
+        "app_error",
+        "app_error",
+        "normal",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error"
+      ],
+      "tier": {
+        "easy": 0.32270916334661354,
+        "subtle": 0.28112449799196787
+      }
+    },
+    "laya_decomposed": {
+      "accuracy": 0.32,
+      "macroF1": 0.25827078228200523,
+      "ece": 0.051379206678369496,
+      "brier": 0.8142018652871534,
+      "riskCoverage": [
+        {
+          "tau": 0.5,
+          "coverage": 0,
+          "risk": null
+        },
+        {
+          "tau": 0.7,
+          "coverage": 0,
+          "risk": null
+        },
+        {
+          "tau": 0.8,
+          "coverage": 0,
+          "risk": null
+        },
+        {
+          "tau": 0.9,
+          "coverage": 0,
+          "risk": null
+        },
+        {
+          "tau": 0.95,
+          "coverage": 0,
+          "risk": null
+        }
+      ],
+      "confusion": [
+        [
+          2,
+          4,
+          66,
+          28,
+          0,
+          0
+        ],
+        [
+          0,
+          62,
+          5,
+          0,
+          33,
+          0
+        ],
+        [
+          0,
+          18,
+          19,
+          10,
+          53,
+          0
+        ],
+        [
+          1,
+          40,
+          16,
+          42,
+          1,
+          0
+        ],
+        [
+          0,
+          19,
+          2,
+          13,
+          66,
+          0
+        ],
+        [
+          0,
+          15,
+          26,
+          20,
+          38,
+          1
+        ]
+      ],
+      "pred": [
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "parser",
+        "parser",
+        "parser",
+        "app_error",
+        "parser",
+        "app_error",
+        "parser",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "normal",
+        "app_error",
+        "parser",
+        "app_error",
+        "app_error",
+        "app_error",
+        "parser",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "parser",
+        "app_error",
+        "parser",
+        "app_error",
+        "parser",
+        "parser",
+        "app_error",
+        "app_error",
+        "parser",
+        "app_error",
+        "parser",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "parser",
+        "app_error",
+        "app_error",
+        "parser",
+        "filtering",
+        "parser",
+        "app_error",
+        "app_error",
+        "app_error",
+        "filtering",
+        "app_error",
+        "app_error",
+        "parser",
+        "app_error",
+        "app_error",
+        "app_error",
+        "parser",
+        "parser",
+        "app_error",
+        "app_error",
+        "app_error",
+        "parser",
+        "app_error",
+        "parser",
+        "parser",
+        "parser",
+        "app_error",
+        "app_error",
+        "parser",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "filtering",
+        "parser",
+        "parser",
+        "parser",
+        "app_error",
+        "app_error",
+        "normal",
+        "parser",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "app_error",
+        "filtering",
+        "app_error",
+        "app_error",
+        "app_error",
+        "filtering",
+        "connection",
+        "filtering",
+        "connection",
+        "filtering",
+        "connection",
+        "filtering",
+        "filtering",
+        "filtering",
+        "filtering",
+        "connection",
+        "filtering",
+        "filtering",
+        "connection",
+        "connection",
+        "filtering",
+        "connection",
+        "connection",
+        "filtering",
+        "filtering",
+        "filtering",
+        "app_error",
+        "app_error",
+        "connection",
+        "filtering",
+        "connection",
+        "filtering",
+        "filtering",
+        "filtering",
+        "filtering",
+        "filtering",
+        "connection",
+        "filtering",
+        "filtering",
+        "filtering",
+        "filtering",
+        "filtering",
+        "filtering",
+        "connection",
+        "filtering",
+        "filtering",
+        "filtering",
+        "connection",
+        "connection",
+        "filtering",
+        "connection",
+        "filtering",
+        "connection",
+        "filtering",
+        "filtering",
+        "filtering",
+        "connection",
+        "connection",
+        "filtering",
+        "app_error",
+        "filtering",
+        "connection",
+        "filtering",
+        "connection",
+        "filtering",
+        "connection",
+        "filtering",
+        "filtering",
+        "connection",
+        "filtering",
+        "filtering",
+        "connection",
+        "connection",
+        "connection",
+        "filtering",
+        "filtering",
+        "connection",
+        "filtering",
+        "filtering",
+        "app_error",
+        "connection",
+        "filtering",
+        "connection",
+        "filtering",
+        "connection",
+        "filtering",
+        "filtering",
+        "filtering",
+        "connection",
+        "filtering",
+        "filtering",
+        "app_error",
+        "filtering",
+        "connection",
+        "connection",
+        "filtering",
+        "filtering",
+        "filtering",
+        "filtering",
+        "filtering",
+        "filtering",
+        "connection",
+        "filtering",
+        "filtering",
+        "filtering",
+        "connection",
+        "connection",
+        "connection",
+        "connection",
+        "connection",
+        "app_error",
+        "connection",
+        "app_error",
+        "connection",
+        "connection",
+        "connection",
+        "parser",
+        "connection",
+        "connection",
+        "connection",
+        "parser",
+        "connection",
+        "connection",
+        "app_error",
+        "filtering",
+        "connection",
+        "connection",
+        "filtering",
+        "filtering",
+        "app_error",
+        "connection",
+        "connection",
+        "connection",
+        "connection",
+        "connection",
+        "filtering",
+        "connection",
+        "app_error",
+        "filtering",
+        "app_error",
+        "connection",
+        "connection",
+        "parser",
+        "connection",
+        "filtering",
+        "connection",
+        "app_error",
+        "connection",
+        "connection",
+        "parser",
+        "filtering",
+        "filtering",
+        "parser",
+        "parser",
+        "connection",
+        "connection",
+        "filtering",
+        "connection",
+        "connection",
+        "connection",
+        "connection",
+        "parser",
+        "filtering",
+        "connection",
+        "app_error",
+        "parser",
+        "filtering",
+        "app_error",
+        "connection",
+        "connection",
+        "filtering",
+        "app_error",
+        "connection",
+        "connection",
+        "connection",
+        "connection",
+        "connection",
+        "connection",
+        "connection",
+        "app_error",
+        "filtering",
+        "connection",
+        "app_error",
+        "app_error",
+        "app_error",
+        "connection",
+        "filtering",
+        "connection",
+        "connection",
+        "parser",
+        "app_error",
+        "connection",
+        "connection",
+        "connection",
+        "parser",
+        "app_error",
+        "app_error",
+        "filtering",
+        "connection",
+        "connection",
+        "filtering",
+        "app_error",
+        "app_error",
+        "filtering",
+        "filtering",
+        "parser",
+        "parser",
+        "filtering",
+        "filtering",
+        "parser",
+        "parser",
+        "parser",
+        "parser",
+        "app_error",
+        "parser",
+        "filtering",
+        "parser",
+        "app_error",
+        "parser",
+        "parser",
+        "parser",
+        "parser",
+        "filtering",
+        "filtering",
+        "filtering",
+        "parser",
+        "filtering",
+        "parser",
+        "parser",
+        "filtering",
+        "filtering",
+        "filtering",
+        "app_error",
+        "filtering",
+        "parser",
+        "filtering",
+        "app_error",
+        "filtering",
+        "parser",
+        "parser",
+        "filtering",
+        "filtering",
+        "parser",
+        "parser",
+        "app_error",
+        "filtering",
+        "filtering",
+        "parser",
+        "app_error",
+        "filtering",
+        "filtering",
+        "app_error",
+        "parser",
+        "filtering",
+        "parser",
+        "parser",
+        "app_error",
+        "filtering",
+        "parser",
+        "filtering",
+        "parser",
+        "filtering",
+        "filtering",
+        "parser",
+        "parser",
+        "normal",
+        "filtering",
+        "filtering",
+        "app_error",
+        "filtering",
+        "filtering",
+        "filtering",
+        "filtering",
+        "parser",
+        "parser",
+        "app_error",
+        "filtering",
+        "app_error",
+        "parser",
+        "filtering",
+        "parser",
+        "filtering",
+        "app_error",
+        "filtering",
+        "parser",
+        "filtering",
+        "app_error",
+        "parser",
+        "app_error",
+        "app_error",
+        "parser",
+        "filtering",
+        "filtering",
+        "filtering",
+        "connection",
+        "parser",
+        "filtering",
+        "parser",
+        "parser",
+        "parser",
+        "parser",
+        "parser",
+        "app_error",
+        "parser",
+        "filtering",
+        "filtering",
+        "parser",
+        "connection",
+        "connection",
+        "connection",
+        "connection",
+        "connection",
+        "connection",
+        "connection",
+        "connection",
+        "connection",
+        "filtering",
+        "filtering",
+        "connection",
+        "connection",
+        "connection",
+        "filtering",
+        "filtering",
+        "connection",
+        "app_error",
+        "connection",
+        "connection",
+        "connection",
+        "app_error",
+        "filtering",
+        "connection",
+        "connection",
+        "connection",
+        "connection",
+        "connection",
+        "connection",
+        "filtering",
+        "connection",
+        "connection",
+        "connection",
+        "parser",
+        "connection",
+        "filtering",
+        "parser",
+        "connection",
+        "connection",
+        "connection",
+        "parser",
+        "connection",
+        "connection",
+        "connection",
+        "filtering",
+        "connection",
+        "filtering",
+        "connection",
+        "connection",
+        "parser",
+        "connection",
+        "connection",
+        "parser",
+        "connection",
+        "connection",
+        "connection",
+        "connection",
+        "parser",
+        "filtering",
+        "filtering",
+        "connection",
+        "connection",
+        "connection",
+        "connection",
+        "parser",
+        "connection",
+        "connection",
+        "connection",
+        "parser",
+        "parser",
+        "filtering",
+        "parser",
+        "connection",
+        "connection",
+        "connection",
+        "filtering",
+        "connection",
+        "connection",
+        "connection",
+        "connection",
+        "filtering",
+        "connection",
+        "connection",
+        "connection",
+        "connection",
+        "filtering",
+        "connection",
+        "parser",
+        "connection",
+        "connection",
+        "connection",
+        "parser",
+        "filtering",
+        "connection",
+        "filtering",
+        "connection",
+        "filtering",
+        "connection",
+        "connection",
+        "connection",
+        "filtering",
+        "connection",
+        "filtering",
+        "connection",
+        "app_error",
+        "connection",
+        "filtering",
+        "connection",
+        "parser",
+        "app_error",
+        "connection",
+        "filtering",
+        "disclosure",
+        "parser",
+        "app_error",
+        "parser",
+        "parser",
+        "app_error",
+        "app_error",
+        "connection",
+        "app_error",
+        "connection",
+        "connection",
+        "filtering",
+        "connection",
+        "connection",
+        "connection",
+        "connection",
+        "parser",
+        "connection",
+        "connection",
+        "app_error",
+        "parser",
+        "app_error",
+        "app_error",
+        "connection",
+        "app_error",
+        "connection",
+        "connection",
+        "connection",
+        "app_error",
+        "parser",
+        "filtering",
+        "connection",
+        "connection",
+        "app_error",
+        "filtering",
+        "filtering",
+        "filtering",
+        "app_error",
+        "connection",
+        "filtering",
+        "parser",
+        "connection",
+        "connection",
+        "app_error",
+        "app_error",
+        "app_error",
+        "parser",
+        "app_error",
+        "parser",
+        "filtering",
+        "app_error",
+        "connection",
+        "connection",
+        "app_error",
+        "connection",
+        "connection",
+        "parser",
+        "filtering",
+        "connection",
+        "parser",
+        "parser",
+        "app_error",
+        "app_error",
+        "connection",
+        "parser",
+        "connection",
+        "filtering",
+        "connection",
+        "parser",
+        "parser",
+        "parser",
+        "app_error",
+        "app_error",
+        "connection",
+        "filtering",
+        "filtering",
+        "connection",
+        "app_error",
+        "connection",
+        "app_error",
+        "app_error",
+        "connection",
+        "parser",
+        "parser",
+        "parser",
+        "connection"
+      ],
+      "tier": {
+        "easy": 0.35856573705179284,
+        "subtle": 0.40160642570281124
+      }
+    }
+  },
+  "ci": {
+    "heuristic": {
+      "accuracy": {
+        "est": 0.945,
+        "lo": 0.9266666666666666,
+        "hi": 0.9633333333333334
+      },
+      "macroF1": {
+        "est": 0.9457550539230445,
+        "lo": 0.9277583939288775,
+        "hi": 0.9627552945615774
+      }
+    },
+    "laya_broad": {
+      "accuracy": {
+        "est": 0.31,
+        "lo": 0.2733333333333333,
+        "hi": 0.34833333333333333
+      },
+      "macroF1": {
+        "est": 0.273850379217532,
+        "lo": 0.23613628920116478,
+        "hi": 0.30958837903670583
+      }
+    },
+    "laya_decomposed": {
+      "accuracy": {
+        "est": 0.32,
+        "lo": 0.2816666666666667,
+        "hi": 0.35833333333333334
+      },
+      "macroF1": {
+        "est": 0.25827078228200523,
+        "lo": 0.22873569521270176,
+        "hi": 0.2869449351605023
+      }
+    },
+    "decomposed_minus_broad_accuracy": {
+      "est": 0.010000000000000009,
+      "lo": -0.043333333333333335,
+      "hi": 0.065
+    },
+    "recall": {
+      "broad": {
+        "normal": {
+          "est": 0.35,
+          "lo": 0.26,
+          "hi": 0.45
+        },
+        "filtering": {
+          "est": 0.12,
+          "lo": 0.06,
+          "hi": 0.19
+        },
+        "app_error": {
+          "est": 1,
+          "lo": 1,
+          "hi": 1
+        },
+        "parser": {
+          "est": 0.13,
+          "lo": 0.06,
+          "hi": 0.2
+        },
+        "connection": {
+          "est": 0.25,
+          "lo": 0.16,
+          "hi": 0.33
+        },
+        "disclosure": {
+          "est": 0.01,
+          "lo": 0,
+          "hi": 0.03
+        }
+      },
+      "decomposed": {
+        "normal": {
+          "est": 0.02,
+          "lo": 0,
+          "hi": 0.05
+        },
+        "filtering": {
+          "est": 0.62,
+          "lo": 0.53,
+          "hi": 0.71
+        },
+        "app_error": {
+          "est": 0.19,
+          "lo": 0.12,
+          "hi": 0.27
+        },
+        "parser": {
+          "est": 0.42,
+          "lo": 0.32,
+          "hi": 0.52
+        },
+        "connection": {
+          "est": 0.66,
+          "lo": 0.56,
+          "hi": 0.75
+        },
+        "disclosure": {
+          "est": 0.01,
+          "lo": 0,
+          "hi": 0.03
+        }
+      }
+    }
+  },
+  "binary": [
+    {
+      "name": "heuristic",
+      "recall_interesting": 0.988,
+      "false_positive_rate": 0
+    },
+    {
+      "name": "laya anomalous>0.5",
+      "recall_interesting": 0.968,
+      "false_positive_rate": 1
+    },
+    {
+      "name": "laya broad (not normal)",
+      "recall_interesting": 0.966,
+      "false_positive_rate": 0.65
+    },
+    {
+      "name": "laya decomposed (not normal)",
+      "recall_interesting": 0.998,
+      "false_positive_rate": 0.98
+    }
+  ],
+  "cascade": [
+    {
+      "tau": 0.5,
+      "escalated_fraction": 1,
+      "recall_interesting": 1
+    },
+    {
+      "tau": 0.7,
+      "escalated_fraction": 1,
+      "recall_interesting": 1
+    },
+    {
+      "tau": 0.9,
+      "escalated_fraction": 1,
+      "recall_interesting": 1
+    }
+  ],
+  "diff": {
+    "tokens_mean": 231.94,
+    "broad": {
+      "accuracy": {
+        "est": 0.5266666666666666,
+        "lo": 0.48833333333333334,
+        "hi": 0.5666666666666667
+      },
+      "macroF1": 0.4747067498862771,
+      "ece": 0.12257733333333337,
+      "brier": 0.7251540066166678,
+      "riskCoverage": [
+        {
+          "tau": 0.5,
+          "coverage": 0.5883333333333334,
+          "risk": 0.4107648725212465
+        },
+        {
+          "tau": 0.7,
+          "coverage": 0.31833333333333336,
+          "risk": 0.45549738219895286
+        },
+        {
+          "tau": 0.8,
+          "coverage": 0.20833333333333334,
+          "risk": 0.552
+        },
+        {
+          "tau": 0.9,
+          "coverage": 0.09,
+          "risk": 0.8333333333333334
+        },
+        {
+          "tau": 0.95,
+          "coverage": 0.051666666666666666,
+          "risk": 1
+        }
+      ],
+      "tier": {
+        "easy": 0.5737051792828686,
+        "subtle": 0.3253012048192771
+      },
+      "recall": {
+        "normal": {
+          "est": 0.91,
+          "lo": 0.85,
+          "hi": 0.96
+        },
+        "filtering": {
+          "est": 0.23,
+          "lo": 0.15,
+          "hi": 0.32
+        },
+        "app_error": {
+          "est": 0.93,
+          "lo": 0.88,
+          "hi": 0.97
+        },
+        "parser": {
+          "est": 0.48,
+          "lo": 0.38,
+          "hi": 0.58
+        },
+        "connection": {
+          "est": 0.59,
+          "lo": 0.49,
+          "hi": 0.69
+        },
+        "disclosure": {
+          "est": 0.02,
+          "lo": 0,
+          "hi": 0.05
+        }
+      },
+      "confusion": [
+        [
+          91,
+          0,
+          9,
+          0,
+          0,
+          0
+        ],
+        [
+          17,
+          23,
+          7,
+          30,
+          1,
+          22
+        ],
+        [
+          7,
+          0,
+          93,
+          0,
+          0,
+          0
+        ],
+        [
+          45,
+          0,
+          3,
+          48,
+          4,
+          0
+        ],
+        [
+          3,
+          0,
+          21,
+          17,
+          59,
+          0
+        ],
+        [
+          26,
+          17,
+          55,
+          0,
+          0,
+          2
+        ]
+      ]
+    },
+    "decomposed": {
+      "accuracy": {
+        "est": 0.4066666666666667,
+        "lo": 0.36666666666666664,
+        "hi": 0.445
+      },
+      "macroF1": 0.37722694768444254,
+      "ece": 0.09964147651749879,
+      "brier": 0.7353070791131248,
+      "tier": {
+        "easy": 0.4820717131474104,
+        "subtle": 0.37751004016064255
+      },
+      "recall": {
+        "normal": {
+          "est": 0.29,
+          "lo": 0.2,
+          "hi": 0.38
+        },
+        "filtering": {
+          "est": 0.3,
+          "lo": 0.21,
+          "hi": 0.39
+        },
+        "app_error": {
+          "est": 0.5,
+          "lo": 0.4,
+          "hi": 0.6
+        },
+        "parser": {
+          "est": 0.66,
+          "lo": 0.57,
+          "hi": 0.75
+        },
+        "connection": {
+          "est": 0.64,
+          "lo": 0.54,
+          "hi": 0.73
+        },
+        "disclosure": {
+          "est": 0.05,
+          "lo": 0.01,
+          "hi": 0.1
+        }
+      },
+      "confusion": [
+        [
+          29,
+          0,
+          43,
+          28,
+          0,
+          0
+        ],
+        [
+          15,
+          30,
+          9,
+          27,
+          19,
+          0
+        ],
+        [
+          2,
+          0,
+          50,
+          21,
+          27,
+          0
+        ],
+        [
+          23,
+          1,
+          5,
+          66,
+          4,
+          1
+        ],
+        [
+          0,
+          1,
+          2,
+          33,
+          64,
+          0
+        ],
+        [
+          20,
+          1,
+          18,
+          35,
+          21,
+          5
+        ]
+      ]
+    },
+    "binary_anomalous": {
+      "recall_interesting": 0.628,
+      "false_positive_rate": 0.85
+    },
+    "broad_minus_raw_broad": {
+      "est": 0.21666666666666662,
+      "lo": 0.18,
+      "hi": 0.2566666666666666
+    },
+    "cascade": [
+      {
+        "tau": 0.5,
+        "escalated_fraction": 0.8,
+        "recall_interesting": 0.896
+      },
+      {
+        "tau": 0.7,
+        "escalated_fraction": 0.925,
+        "recall_interesting": 0.954
+      },
+      {
+        "tau": 0.9,
+        "escalated_fraction": 1,
+        "recall_interesting": 1
+      }
+    ],
+    "gate": {
+      "heuristic": {
+        "escalated_fraction": {
+          "est": 0.8233333333333334,
+          "lo": 0.7933333333333333,
+          "hi": 0.8533333333333334
+        },
+        "recall_interesting": {
+          "est": 0.988,
+          "lo": 0.978,
+          "hi": 0.996
+        },
+        "false_escalation_rate": {
+          "est": 0,
+          "lo": 0,
+          "hi": 0
+        }
+      },
+      "laya_diff_anomalous": {
+        "escalated_fraction": {
+          "est": 0.665,
+          "lo": 0.6266666666666667,
+          "hi": 0.705
+        },
+        "recall_interesting": {
+          "est": 0.628,
+          "lo": 0.588,
+          "hi": 0.668
+        },
+        "false_escalation_rate": {
+          "est": 0.85,
+          "lo": 0.78,
+          "hi": 0.92
+        }
+      },
+      "laya_diff_broad_tau0.5": {
+        "escalated_fraction": {
+          "est": 0.8,
+          "lo": 0.77,
+          "hi": 0.8316666666666667
+        },
+        "recall_interesting": {
+          "est": 0.896,
+          "lo": 0.868,
+          "hi": 0.922
+        },
+        "false_escalation_rate": {
+          "est": 0.32,
+          "lo": 0.23,
+          "hi": 0.41
+        }
+      },
+      "hybrid_tau0.5": {
+        "escalated_fraction": {
+          "est": 0.7466666666666667,
+          "lo": 0.7133333333333334,
+          "hi": 0.7816666666666666
+        },
+        "recall_interesting": {
+          "est": 0.896,
+          "lo": 0.868,
+          "hi": 0.922
+        },
+        "false_escalation_rate": {
+          "est": 0,
+          "lo": 0,
+          "hi": 0
+        }
+      },
+      "laya_diff_broad_tau0.7": {
+        "escalated_fraction": {
+          "est": 0.925,
+          "lo": 0.905,
+          "hi": 0.945
+        },
+        "recall_interesting": {
+          "est": 0.954,
+          "lo": 0.934,
+          "hi": 0.972
+        },
+        "false_escalation_rate": {
+          "est": 0.78,
+          "lo": 0.7,
+          "hi": 0.86
+        }
+      },
+      "hybrid_tau0.7": {
+        "escalated_fraction": {
+          "est": 0.79,
+          "lo": 0.76,
+          "hi": 0.8216666666666667
+        },
+        "recall_interesting": {
+          "est": 0.948,
+          "lo": 0.926,
+          "hi": 0.966
+        },
+        "false_escalation_rate": {
+          "est": 0,
+          "lo": 0,
+          "hi": 0
+        }
+      },
+      "laya_diff_broad_tau0.9": {
+        "escalated_fraction": {
+          "est": 1,
+          "lo": 1,
+          "hi": 1
+        },
+        "recall_interesting": {
+          "est": 1,
+          "lo": 1,
+          "hi": 1
+        },
+        "false_escalation_rate": {
+          "est": 1,
+          "lo": 1,
+          "hi": 1
+        }
+      },
+      "hybrid_tau0.9": {
+        "escalated_fraction": {
+          "est": 0.8233333333333334,
+          "lo": 0.7933333333333333,
+          "hi": 0.8533333333333334
+        },
+        "recall_interesting": {
+          "est": 0.988,
+          "lo": 0.978,
+          "hi": 0.996
+        },
+        "false_escalation_rate": {
+          "est": 0,
+          "lo": 0,
+          "hi": 0
+        }
+      }
+    }
+  },
+  "hard": {
+    "n": 300,
+    "heuristic": {
+      "accuracy": {
+        "est": 0.09333333333333334,
+        "lo": 0.06333333333333334,
+        "hi": 0.13
+      },
+      "macroF1": 0.03888888888888888,
+      "recall": {
+        "normal": 0,
+        "filtering": 0,
+        "app_error": 0,
+        "parser": 0.56,
+        "connection": 0,
+        "disclosure": 0
+      }
+    },
+    "laya_raw_broad": {
+      "accuracy": {
+        "est": 0.2733333333333333,
+        "lo": 0.22333333333333333,
+        "hi": 0.3233333333333333
+      },
+      "macroF1": 0.20038076189995646,
+      "recall": {
+        "normal": 0.42,
+        "filtering": 0.1,
+        "app_error": 0.98,
+        "parser": 0.14,
+        "connection": 0,
+        "disclosure": 0
+      }
+    },
+    "laya_diff_broad": {
+      "accuracy": {
+        "est": 0.37666666666666665,
+        "lo": 0.31666666666666665,
+        "hi": 0.43
+      },
+      "macroF1": 0.33487951959551393,
+      "recall": {
+        "normal": 0.92,
+        "filtering": 0.14,
+        "app_error": 0.56,
+        "parser": 0.2,
+        "connection": 0.34,
+        "disclosure": 0.1
+      },
+      "confusion": [
+        [
+          46,
+          0,
+          0,
+          0,
+          1,
+          3
+        ],
+        [
+          6,
+          7,
+          25,
+          6,
+          3,
+          3
+        ],
+        [
+          16,
+          5,
+          28,
+          0,
+          1,
+          0
+        ],
+        [
+          38,
+          0,
+          1,
+          10,
+          1,
+          0
+        ],
+        [
+          14,
+          0,
+          19,
+          0,
+          17,
+          0
+        ],
+        [
+          16,
+          0,
+          21,
+          8,
+          0,
+          5
+        ]
+      ]
+    },
+    "laya_diff_decomposed": {
+      "accuracy": {
+        "est": 0.4266666666666667,
+        "lo": 0.37333333333333335,
+        "hi": 0.48
+      },
+      "macroF1": 0.4005627664698557,
+      "recall": {
+        "normal": 0.56,
+        "filtering": 0.34,
+        "app_error": 0.6,
+        "parser": 0.7,
+        "connection": 0.3,
+        "disclosure": 0.06
+      }
+    },
+    "gate": {
+      "heuristic": {
+        "escalated_fraction": {
+          "est": 0.8966666666666666,
+          "lo": 0.8633333333333333,
+          "hi": 0.93
+        },
+        "recall_interesting": {
+          "est": 0.876,
+          "lo": 0.836,
+          "hi": 0.916
+        },
+        "false_escalation_rate": {
+          "est": 1,
+          "lo": 1,
+          "hi": 1
+        }
+      },
+      "laya_diff_anomalous": {
+        "escalated_fraction": {
+          "est": 0.6133333333333333,
+          "lo": 0.5566666666666666,
+          "hi": 0.6666666666666666
+        },
+        "recall_interesting": {
+          "est": 0.58,
+          "lo": 0.524,
+          "hi": 0.644
+        },
+        "false_escalation_rate": {
+          "est": 0.78,
+          "lo": 0.66,
+          "hi": 0.9
+        }
+      },
+      "laya_diff_broad_tau0.5": {
+        "escalated_fraction": {
+          "est": 0.7833333333333333,
+          "lo": 0.7366666666666667,
+          "hi": 0.83
+        },
+        "recall_interesting": {
+          "est": 0.8,
+          "lo": 0.748,
+          "hi": 0.848
+        },
+        "false_escalation_rate": {
+          "est": 0.7,
+          "lo": 0.56,
+          "hi": 0.82
+        }
+      },
+      "hybrid_tau0.5": {
+        "escalated_fraction": {
+          "est": 0.7,
+          "lo": 0.6466666666666666,
+          "hi": 0.7533333333333333
+        },
+        "recall_interesting": {
+          "est": 0.7,
+          "lo": 0.64,
+          "hi": 0.756
+        },
+        "false_escalation_rate": {
+          "est": 0.7,
+          "lo": 0.56,
+          "hi": 0.82
+        }
+      },
+      "laya_diff_broad_tau0.7": {
+        "escalated_fraction": {
+          "est": 0.9233333333333333,
+          "lo": 0.8933333333333333,
+          "hi": 0.95
+        },
+        "recall_interesting": {
+          "est": 0.908,
+          "lo": 0.868,
+          "hi": 0.944
+        },
+        "false_escalation_rate": {
+          "est": 1,
+          "lo": 1,
+          "hi": 1
+        }
+      },
+      "hybrid_tau0.7": {
+        "escalated_fraction": {
+          "est": 0.8266666666666667,
+          "lo": 0.7833333333333333,
+          "hi": 0.8666666666666667
+        },
+        "recall_interesting": {
+          "est": 0.792,
+          "lo": 0.74,
+          "hi": 0.844
+        },
+        "false_escalation_rate": {
+          "est": 1,
+          "lo": 1,
+          "hi": 1
+        }
+      },
+      "laya_diff_broad_tau0.9": {
+        "escalated_fraction": {
+          "est": 1,
+          "lo": 1,
+          "hi": 1
+        },
+        "recall_interesting": {
+          "est": 1,
+          "lo": 1,
+          "hi": 1
+        },
+        "false_escalation_rate": {
+          "est": 1,
+          "lo": 1,
+          "hi": 1
+        }
+      },
+      "hybrid_tau0.9": {
+        "escalated_fraction": {
+          "est": 0.8966666666666666,
+          "lo": 0.8633333333333333,
+          "hi": 0.93
+        },
+        "recall_interesting": {
+          "est": 0.876,
+          "lo": 0.836,
+          "hi": 0.916
+        },
+        "false_escalation_rate": {
+          "est": 1,
+          "lo": 1,
+          "hi": 1
+        }
+      }
+    },
+    "decomposed_minus_broad": {
+      "est": 0.050000000000000044,
+      "lo": -0.023333333333333317,
+      "hi": 0.12000000000000005
+    }
+  },
+  "adapt": {
+    "train": "dev split, 600 examples, seed 2024",
+    "test": {
+      "laya_head": {
+        "accuracy": {
+          "est": 0.9466666666666667,
+          "lo": 0.9283333333333333,
+          "hi": 0.9633333333333334
+        },
+        "macroF1": 0.947128057426537,
+        "recall": {
+          "normal": 1,
+          "filtering": 0.86,
+          "app_error": 0.99,
+          "parser": 0.93,
+          "connection": 0.95,
+          "disclosure": 0.95
+        },
+        "ece": 0.04926962341755731,
+        "brier": 0.08688527567273462
+      },
+      "tfidf_logreg": {
+        "accuracy": {
+          "est": 1,
+          "lo": 1,
+          "hi": 1
+        },
+        "macroF1": 1,
+        "recall": {
+          "normal": 1,
+          "filtering": 1,
+          "app_error": 1,
+          "parser": 1,
+          "connection": 1,
+          "disclosure": 1
+        },
+        "ece": 0.17255188827066278,
+        "brier": 0.047226949568746776
+      }
+    },
+    "hard": {
+      "laya_head": {
+        "accuracy": {
+          "est": 0.5166666666666667,
+          "lo": 0.46,
+          "hi": 0.5766666666666667
+        },
+        "macroF1": 0.5049064052269989,
+        "recall": {
+          "normal": 0.3,
+          "filtering": 0.88,
+          "app_error": 0.36,
+          "parser": 0.68,
+          "connection": 0.42,
+          "disclosure": 0.46
+        },
+        "ece": 0.28451517045432734,
+        "brier": 0.7365895514045638
+      },
+      "tfidf_logreg": {
+        "accuracy": {
+          "est": 0.25666666666666665,
+          "lo": 0.21,
+          "hi": 0.30666666666666664
+        },
+        "macroF1": 0.26334735352040817,
+        "recall": {
+          "normal": 0,
+          "filtering": 0.34,
+          "app_error": 0.3,
+          "parser": 0.42,
+          "connection": 0.12,
+          "disclosure": 0.36
+        },
+        "ece": 0.21110084013700636,
+        "brier": 0.8907568361722781
+      },
+      "head_minus_tfidf": {
+        "est": 0.26000000000000006,
+        "lo": 0.19,
+        "hi": 0.3333333333333333
+      },
+      "head_minus_zero_shot_broad": {
+        "est": 0.14000000000000007,
+        "lo": 0.06,
+        "hi": 0.21666666666666673
+      },
+      "gate": {
+        "laya_head": {
+          "escalated_fraction": {
+            "est": 0.9666666666666667,
+            "lo": 0.9433333333333334,
+            "hi": 0.9866666666666667
+          },
+          "recall_interesting": {
+            "est": 1,
+            "lo": 1,
+            "hi": 1
+          },
+          "false_escalation_rate": {
+            "est": 0.8,
+            "lo": 0.68,
+            "hi": 0.9
+          }
+        },
+        "hybrid_head": {
+          "escalated_fraction": {
+            "est": 0.8633333333333333,
+            "lo": 0.8233333333333334,
+            "hi": 0.9
+          },
+          "recall_interesting": {
+            "est": 0.876,
+            "lo": 0.836,
+            "hi": 0.916
+          },
+          "false_escalation_rate": {
+            "est": 0.8,
+            "lo": 0.68,
+            "hi": 0.9
+          }
+        }
+      }
+    }
+  },
+  "candidate_only": {
+    "accuracy": 0.3333333333333333,
+    "macroF1": 0.2836288814681998,
+    "ece": 0.316948,
+    "brier": 0.8702301451166657,
+    "tier": {
+      "easy": 0.27091633466135456,
+      "subtle": 0.1285140562248996
+    },
+    "riskCoverage": [
+      {
+        "tau": 0.5,
+        "coverage": 0.6783333333333333,
+        "risk": 0.6167076167076166
+      },
+      {
+        "tau": 0.7,
+        "coverage": 0.415,
+        "risk": 0.5020080321285141
+      },
+      {
+        "tau": 0.8,
+        "coverage": 0.33166666666666667,
+        "risk": 0.4623115577889447
+      },
+      {
+        "tau": 0.9,
+        "coverage": 0.20166666666666666,
+        "risk": 0.30578512396694213
+      },
+      {
+        "tau": 0.95,
+        "coverage": 0.07,
+        "risk": 0.2857142857142857
+      }
+    ],
+    "confusion": [
+      [
+        100,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        47,
+        40,
+        0,
+        5,
+        8,
+        0
+      ],
+      [
+        86,
+        1,
+        13,
+        0,
+        0,
+        0
+      ],
+      [
+        99,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        48,
+        5,
+        0,
+        0,
+        47,
+        0
+      ],
+      [
+        75,
+        2,
+        11,
+        9,
+        3,
+        0
+      ]
+    ]
+  },
+  "ablation": {
+    "0": {
+      "n": 72,
+      "tokens_mean": 382.5416666666667,
+      "broad_acc": {
+        "est": 0.3333333333333333,
+        "lo": 0.2222222222222222,
+        "hi": 0.4444444444444444
+      },
+      "broad_ece": 0.19889999999999997
+    },
+    "300": {
+      "n": 72,
+      "tokens_mean": 498.9583333333333,
+      "broad_acc": {
+        "est": 0.19444444444444445,
+        "lo": 0.1111111111111111,
+        "hi": 0.2916666666666667
+      },
+      "broad_ece": 0.28374861111111116
+    },
+    "800": {
+      "n": 72,
+      "tokens_mean": 499,
+      "broad_acc": {
+        "est": 0.18055555555555555,
+        "lo": 0.09722222222222222,
+        "hi": 0.2638888888888889
+      },
+      "broad_ece": 0.27677083333333335
+    }
+  },
+  "adversarial": {
+    "clean": {
+      "broad": {
+        "accuracy": 0.32,
+        "flipped_prediction": {
+          "est": 0,
+          "lo": 0,
+          "hi": 0
+        },
+        "flipped_to_normal": {
+          "est": 0,
+          "lo": 0,
+          "hi": 0
+        },
+        "confident_correct_n": 11,
+        "confident_dropped_below_0_8": 0
+      },
+      "decomposed": {
+        "accuracy": 0.4,
+        "flipped_prediction": {
+          "est": 0,
+          "lo": 0,
+          "hi": 0
+        },
+        "flipped_to_normal": {
+          "est": 0,
+          "lo": 0,
+          "hi": 0
+        },
+        "confident_correct_n": 0,
+        "confident_dropped_below_0_8": null
+      }
+    },
+    "opinion": {
+      "broad": {
+        "accuracy": 0.26,
+        "flipped_prediction": {
+          "est": 0.5,
+          "lo": 0.36,
+          "hi": 0.64
+        },
+        "flipped_to_normal": {
+          "est": 0.48,
+          "lo": 0.34,
+          "hi": 0.62
+        },
+        "confident_correct_n": 11,
+        "confident_dropped_below_0_8": 0.5454545454545454
+      },
+      "decomposed": {
+        "accuracy": 0.4,
+        "flipped_prediction": {
+          "est": 0.36,
+          "lo": 0.24,
+          "hi": 0.5
+        },
+        "flipped_to_normal": {
+          "est": 0,
+          "lo": 0,
+          "hi": 0
+        },
+        "confident_correct_n": 0,
+        "confident_dropped_below_0_8": null
+      }
+    },
+    "authority": {
+      "broad": {
+        "accuracy": 0.46,
+        "flipped_prediction": {
+          "est": 0.42,
+          "lo": 0.28,
+          "hi": 0.56
+        },
+        "flipped_to_normal": {
+          "est": 0.1,
+          "lo": 0.02,
+          "hi": 0.2
+        },
+        "confident_correct_n": 11,
+        "confident_dropped_below_0_8": 0.45454545454545453
+      },
+      "decomposed": {
+        "accuracy": 0.36,
+        "flipped_prediction": {
+          "est": 0.36,
+          "lo": 0.24,
+          "hi": 0.5
+        },
+        "flipped_to_normal": {
+          "est": 0.02,
+          "lo": 0,
+          "hi": 0.06
+        },
+        "confident_correct_n": 0,
+        "confident_dropped_below_0_8": null
+      }
+    },
+    "instruction": {
+      "broad": {
+        "accuracy": 0.3,
+        "flipped_prediction": {
+          "est": 0.2,
+          "lo": 0.1,
+          "hi": 0.32
+        },
+        "flipped_to_normal": {
+          "est": 0.16,
+          "lo": 0.06,
+          "hi": 0.26
+        },
+        "confident_correct_n": 11,
+        "confident_dropped_below_0_8": 0.45454545454545453
+      },
+      "decomposed": {
+        "accuracy": 0.42,
+        "flipped_prediction": {
+          "est": 0.18,
+          "lo": 0.08,
+          "hi": 0.3
+        },
+        "flipped_to_normal": {
+          "est": 0,
+          "lo": 0,
+          "hi": 0
+        },
+        "confident_correct_n": 0,
+        "confident_dropped_below_0_8": null
+      }
+    }
+  },
+  "latency": {
+    "broad_ms": {
+      "p50": 916.3759999999893,
+      "p95": 1407.5211000000127,
+      "mean": 977.7219966666694
+    },
+    "narrow7_ms": {
+      "p50": 5967.10149999999,
+      "p95": 8287.89850000001,
+      "mean": 6026.171138333334
+    },
+    "single_noul_ms": {
+      "p50": 657.6302999999607,
+      "p95": 1439.639300000039,
+      "mean": 724.939846666668
+    }
+  }
+}

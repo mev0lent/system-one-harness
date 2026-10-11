@@ -1,0 +1,16 @@
+{
+  "name": "system-one-http-triage-harness",
+  "version": "1.0.0",
+  "description": "Pilot harness: can a cheap decision model gate an expensive reasoning model on HTTP response triage without losing the anomalies that matter?",
+  "license": "MIT",
+  "author": "Niklas Heringer",
+  "private": true,
+  "type": "commonjs",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "reproduce": "node analyze.mjs && node compare_analyze.mjs && node inject_analyze.mjs && node llm_analyze.mjs && node cascade.mjs && node gate_templates.mjs && node hard2_analyze.mjs"
+  },
+  "dependencies": {
+    "@receptron/laya": "^0.1.2"
+  }
+}
